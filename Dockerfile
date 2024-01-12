@@ -1,4 +1,4 @@
-FROM php:8.1-alpine
+FROM php:8.2-alpine
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
     && apk add --no-cache linux-headers $PHPIZE_DEPS \
